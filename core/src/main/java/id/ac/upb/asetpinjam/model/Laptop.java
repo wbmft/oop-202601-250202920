@@ -1,30 +1,21 @@
 package id.ac.upb.asetpinjam.model;
 
-/** Minggu 3: spesifikasi dan nomor inventaris tidak boleh kosong. */
+/** Minggu 3: aset berupa laptop. Spesifikasi dan nomor inventaris tidak boleh kosong. */
 public class Laptop extends Aset {
 
-    private String spesifikasi;
-    private String nomorInventaris;
+    // TODO minggu 3: field spesifikasi dan nomorInventaris.
 
-    public Laptop(
-            String kode,
-            String nama,
-            String spesifikasi,
-            String nomorInventaris) {
+    private final String spesifikasi;
+    private final String nomorInventaris;
+
+    public Laptop(String kode, String nama, String spesifikasi, String nomorInventaris) {
         super(kode, nama);
-
         if (spesifikasi == null || spesifikasi.isBlank()) {
-            throw new IllegalArgumentException(
-                "Spesifikasi tidak boleh kosong"
-            );
+            throw new IllegalArgumentException("Spesifikasi tidak boleh null atau kosong");
         }
-
         if (nomorInventaris == null || nomorInventaris.isBlank()) {
-            throw new IllegalArgumentException(
-                "Nomor inventaris tidak boleh kosong"
-            );
+            throw new IllegalArgumentException("Nomor inventaris tidak boleh null atau kosong");
         }
-
         this.spesifikasi = spesifikasi;
         this.nomorInventaris = nomorInventaris;
     }
@@ -42,7 +33,9 @@ public class Laptop extends Aset {
         return JenisAset.LAPTOP;
     }
 
-    // hitungDenda(int) dikerjakan pada Minggu 4.
+    // Minggu 4: override hitungDenda(int).
+    @Override
+    public long hitungDenda(int hariTerlambat) {
+        return super.hitungDenda(hariTerlambat) * 2;
+    }
 }
-
- 

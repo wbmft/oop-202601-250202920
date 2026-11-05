@@ -5,19 +5,17 @@ public class AlatLab extends Aset {
 
     // TODO minggu 3: field laboratorium dan tingkatRisiko.
 
-    private String laboratorium;
-    private TingkatRisiko tingkatRisiko;
+    private final String laboratorium;
+    private final TingkatRisiko tingkatRisiko;
 
     public AlatLab(String kode, String nama, String laboratorium, TingkatRisiko tingkatRisiko) {
         super(kode, nama);
-
         if (laboratorium == null || laboratorium.isBlank()) {
-            throw new IllegalArgumentException("Laboratorium tidak boleh kosong");
+            throw new IllegalArgumentException("Laboratorium tidak boleh null atau kosong");
         }
         if (tingkatRisiko == null) {
             throw new IllegalArgumentException("Tingkat risiko tidak boleh null");
         }
-
         this.laboratorium = laboratorium;
         this.tingkatRisiko = tingkatRisiko;
     }
@@ -35,6 +33,9 @@ public class AlatLab extends Aset {
         return JenisAset.ALAT_LAB;
     }
 
-    // TODO minggu 3: override getJenis(). Minggu 4: override hitungDenda(int).
+    // Minggu 4: override hitungDenda(int).
+    @Override
+    public long hitungDenda(int hariTerlambat) {
+        return super.hitungDenda(hariTerlambat) * 4;
+    }
 }
- 
