@@ -34,8 +34,9 @@ public class Laptop extends Aset {
     }
 
     // Minggu 4: override hitungDenda(int).
+    // Minggu 5: memakai dendaDasar() karena hitungDenda() di Aset kini abstrak. Multiplier laptop 2x.
     @Override
     public long hitungDenda(int hariTerlambat) {
-        return super.hitungDenda(hariTerlambat) * 2;
+        return dendaDasar(hariTerlambat) * 2;
     }
 }

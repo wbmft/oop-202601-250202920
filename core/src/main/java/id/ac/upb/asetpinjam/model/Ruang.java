@@ -25,8 +25,9 @@ public class Ruang extends Aset {
     }
 
     // Minggu 4: override hitungDenda(int).
+    // Minggu 5: memakai dendaDasar() karena hitungDenda() di Aset kini abstrak. Multiplier ruang 1x.
     @Override
     public long hitungDenda(int hariTerlambat) {
-        return super.hitungDenda(hariTerlambat);
+        return dendaDasar(hariTerlambat);
     }
 }
