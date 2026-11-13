@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="page1" name="1. Domain, jadwal, katalog">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1217" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="Class Diagram 1/3 - Domain, jadwal, katalog, factory   (paket induk: id.ac.upb.asetpinjam)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="kontrak" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#e1f5fe;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="model" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#f3f3f3;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="520" y="292" width="755" height="885" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="jadwal" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#e8f5e9;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="490" width="320" height="224" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="katalog" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#fff3e0;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="40" y="285" width="370" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="factory" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#f3e5f5;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="40" y="490" width="350" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="b8" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;Aset&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- kode: String&lt;br&gt;- nama: String&lt;br&gt;- status: StatusAset&lt;br&gt;- kondisi: Kondisi&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ getKode(): String&lt;br&gt;+ getNama(): String&lt;br&gt;+ getStatus(): StatusAset&lt;br&gt;+ getKondisi(): Kondisi&lt;br&gt;+ setNama(nama: String): void&lt;br&gt;+ setStatus(status: StatusAset): void&lt;br&gt;+ setKondisi(kondisi: Kondisi): void&lt;br&gt;+ bisaDipinjam(): boolean&lt;br&gt;&lt;i&gt;+ getJenis(): JenisAset&lt;/i&gt;&lt;br&gt;+ hitungDenda(hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="390" width="260" height="238" as="geometry" />
+        </mxCell>
+        <mxCell id="b9" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;DapatDipinjam&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ bisaDipinjam(): boolean&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="130" width="180" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="b10" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Ruang&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- kapasitas: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ getKapasitas(): int&lt;br&gt;+ getJenis(): JenisAset&lt;br&gt;+ hitungDenda(hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="688" width="280" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="b11" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Laptop&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- spesifikasi: String&lt;br&gt;- nomorInventaris: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ getSpesifikasi(): String&lt;br&gt;+ getNomorInventaris(): String&lt;br&gt;+ getJenis(): JenisAset&lt;br&gt;+ hitungDenda(hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="821" width="280" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="b12" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AlatLab&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- laboratorium: String&lt;br&gt;- tingkatRisiko: TingkatRisiko&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ getLaboratorium(): String&lt;br&gt;+ getTingkatRisiko(): TingkatRisiko&lt;br&gt;+ getJenis(): JenisAset&lt;br&gt;+ hitungDenda(hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="982" width="280" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="b13" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Peminjaman&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- id: String&lt;br&gt;- mulai: LocalDateTime&lt;br&gt;- selesai: LocalDateTime&lt;br&gt;- status: StatusPeminjaman&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ getId(): String&lt;br&gt;+ getPeminjam(): Peminjam&lt;br&gt;+ getAset(): Aset&lt;br&gt;+ getMulai(): LocalDateTime&lt;br&gt;+ getSelesai(): LocalDateTime&lt;br&gt;+ getStatus(): StatusPeminjaman&lt;br&gt;+ ubahStatus(baru: StatusPeminjaman): void&lt;br&gt;+ setStatusDariPenyimpanan(&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status: StatusPeminjaman): void&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="480" width="280" height="224" as="geometry" />
+        </mxCell>
+        <mxCell id="b14" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«record»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;Peminjam&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ id: String&lt;br&gt;+ nama: String&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="342" width="150" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="b15" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«enumeration»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;StatusAset&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;TERSEDIA&lt;br&gt;DIPINJAM&lt;br&gt;RUSAK&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="759" width="140" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="b16" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«enumeration»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;Kondisi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;BAIK&lt;br&gt;RUSAK_RINGAN&lt;br&gt;RUSAK_BERAT&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="759" width="140" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="b17" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«enumeration»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;JenisAset&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;RUANG&lt;br&gt;LAPTOP&lt;br&gt;ALAT_LAB&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="884" width="140" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="b18" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«enumeration»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;TingkatRisiko&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;RENDAH&lt;br&gt;SEDANG&lt;br&gt;TINGGI&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="884" width="140" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="b19" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«enumeration»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;StatusPeminjaman&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;DIAJUKAN&lt;br&gt;DISETUJUI&lt;br&gt;DITOLAK&lt;br&gt;DIBATALKAN&lt;br&gt;DIPINJAM&lt;br&gt;TERLAMBAT&lt;br&gt;DIKEMBALIKAN&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1009" width="150" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="b20" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JadwalPeminjaman&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- daftar: List&amp;lt;Peminjaman&amp;gt;&lt;br&gt;- kuotaLaptop: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ tambah(p: Peminjaman): void&lt;br&gt;+ bentrok(baru: Peminjaman): boolean&lt;br&gt;+ semuaUrutMulai(): List&amp;lt;Peminjaman&amp;gt;&lt;br&gt;+ perAset(): Map&amp;lt;String, List&amp;lt;Peminjaman&amp;gt;&amp;gt;&lt;br&gt;+ hapus(id: String): boolean&lt;br&gt;+ ajukan(baru: Peminjaman): void&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="540" width="280" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="b21" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;KatalogAset&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- daftar: List&amp;lt;Aset&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ tambah(aset: Aset): void&lt;br&gt;+ semua(): List&amp;lt;Aset&amp;gt;&lt;br&gt;+ cari(kata: String): List&amp;lt;Aset&amp;gt;&lt;br&gt;+ cari(kata: String, jenis: JenisAset): List&amp;lt;Aset&amp;gt;&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="335" width="330" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="b22" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«final»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;AsetFactory&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ {static} buat(jenis: JenisAset, kode: String,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;nama: String, atribut: String...): Aset&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="540" width="310" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="Enumerasi dipakai sebagai tipe atribut dan parameter pada kelas di atasnya (relasinya tidak digambar agar diagram tidak padat)." style="shape=note;size=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;fontSize=11;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="759" width="210" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;dashed=1;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b8" target="b9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.1154;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b10" target="b8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="737" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e26" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.1154;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b11" target="b8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="884" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e27" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.1154;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b12" target="b8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="1045" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e28" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;exitX=1.0000;exitY=0.8929;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.1891;entryDx=0;entryDy=0;" edge="1" parent="1" source="b21" target="b8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=open;endSize=10;dashed=1;exitX=1.0000;exitY=0.4000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.7983;entryDx=0;entryDy=0;" edge="1" parent="1" source="b22" target="b8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=open;endSize=10;exitX=0.0000;exitY=0.2679;exitDx=0;exitDy=0;entryX=1.0000;entryY=0.6303;entryDx=0;entryDy=0;" edge="1" parent="1" source="b13" target="b8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=open;endSize=10;exitX=0.3571;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.6667;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b13" target="b14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;exitX=0.0000;exitY=0.4545;exitDx=0;exitDy=0;entryX=1.0000;entryY=0.5804;entryDx=0;entryDy=0;" edge="1" parent="1" source="b20" target="b13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="402" y="415" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="504.6" y="415" width="30.8" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="&lt;i&gt;«create»&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="427.2" y="560" width="55.6" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="804" y="520" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="520" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="aset" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="859.6" y="520" width="30.8" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1056" y="460" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1056" y="424" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="peminjam" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1066.2" y="442" width="55.6" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="590" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1238.6" y="590" width="30.8" height="16" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page2" name="2. Denda (Strategy)">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1160" pageHeight="582" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="Class Diagram 2/3 - Aturan denda (pola Strategy)   (paket induk: id.ac.upb.asetpinjam)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="kontrak" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#e1f5fe;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="595" y="80" width="350" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="denda" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#e8f5e9;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="40" y="254" width="1080" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;AturanDenda&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ hitung(aset: Aset, hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="615" y="130" width="310" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DendaFlat&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ hitung(aset: Aset, hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="304" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="b7" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DendaProgresif&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ hitung(aset: Aset, hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="304" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="b8" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LayananDenda&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- aturan: AturanDenda&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ LayananDenda(aturan: AturanDenda)&lt;br&gt;+ hitung(aset: Aset, hariTerlambat: int): long&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="304" width="310" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="Pola Strategy: LayananDenda menerima AturanDenda lewat konstruktor (bukan membuatnya sendiri), sehingga aturan denda bisa diganti tanpa mengubah LayananDenda. Tipe Aset: lihat halaman 1." style="shape=note;size=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;fontSize=11;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="494" width="700" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;dashed=1;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b6" target="b5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="595" y="244" />
+              <mxPoint x="770" y="244" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;dashed=1;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b7" target="b5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="945" y="244" />
+              <mxPoint x="770" y="244" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b8" target="b5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="215" y="162" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="221" y="284" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="593" y="142" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="aturan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="393.4" y="142" width="43.2" height="16" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page3" name="3. Persistensi &amp; exception">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1210" pageHeight="870" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="Class Diagram 3/3 - Akses data (DAO) dan exception domain   (paket induk: id.ac.upb.asetpinjam)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="dao" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#fff3e0;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="810" height="406" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="exception" style="shape=folder;fontStyle=1;fontSize=11;spacingTop=24;spacingLeft=8;tabWidth=70;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=#fce4ec;strokeColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="40" y="546" width="1010" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;PeminjamanDAO&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ simpan(peminjaman: Peminjaman): void&lt;br&gt;+ cariById(id: String): Optional&amp;lt;Peminjaman&amp;gt;&lt;br&gt;+ perbaruiStatus(id: String,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status: StatusPeminjaman): boolean&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="130" width="330" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;/p&gt;&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;AsetDAO&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ simpan(aset: Aset): void&lt;br&gt;+ cariByKode(kode: String): Optional&amp;lt;Aset&amp;gt;&lt;br&gt;+ semua(): List&amp;lt;Aset&amp;gt;&lt;br&gt;+ perbarui(aset: Aset): void&lt;br&gt;+ hapus(kode: String): boolean&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="130" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b7" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JdbcPeminjamanDAO&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- sumberKoneksi: Supplier&amp;lt;Connection&amp;gt;&lt;br&gt;- asetDao: AsetDAO&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ simpan(peminjaman: Peminjaman): void&lt;br&gt;+ cariById(id: String): Optional&amp;lt;Peminjaman&amp;gt;&lt;br&gt;+ perbaruiStatus(id: String,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status: StatusPeminjaman): boolean&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="330" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="b8" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JdbcAsetDAO&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;- sumberKoneksi: Supplier&amp;lt;Connection&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;margin:3px 0;&quot;&gt;&lt;p style=&quot;margin:0;margin-left:6px;&quot;&gt;+ simpan(aset: Aset): void&lt;br&gt;+ cariByKode(kode: String): Optional&amp;lt;Aset&amp;gt;&lt;br&gt;+ semua(): List&amp;lt;Aset&amp;gt;&lt;br&gt;+ perbarui(aset: Aset): void&lt;br&gt;+ hapus(kode: String): boolean&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="340" width="300" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="b9" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AsetPinjamException&lt;/b&gt;&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="596" width="230" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="b10" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PeminjamanBentrokException&lt;/b&gt;&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="704" width="220" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="b11" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;KuotaHabisException&lt;/b&gt;&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="704" width="220" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="b12" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StatusTidakSahException&lt;/b&gt;&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="704" width="220" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="b13" value="&lt;p style=&quot;margin:0;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DataAksesException&lt;/b&gt;&lt;/p&gt;" style="html=1;whiteSpace=wrap;overflow=fill;verticalAlign=top;align=left;fontSize=11;fontFamily=Helvetica;strokeColor=#333333;fillColor=#ffffff;rounded=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="810" y="704" width="220" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="JdbcAsetDAO dan JdbcPeminjamanDAO membungkus SQLException menjadi DataAksesException (lihat paket exception di bawah)." style="shape=note;size=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;fontSize=11;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="910" y="130" width="260" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="Semua exception bersifat unchecked (turunan RuntimeException). Dilempar oleh: JadwalPeminjaman.ajukan (PeminjamanBentrokException, KuotaHabisException), Peminjaman.ubahStatus (StatusTidakSahException), dan kelas DAO (DataAksesException)." style="shape=note;size=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;fontSize=11;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="782" width="970" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;dashed=1;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b7" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;dashed=1;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b8" target="b6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;startArrow=diamondThin;startFill=0;startSize=16;endArrow=open;endSize=10;exitX=1.0000;exitY=0.5556;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.3333;entryDx=0;entryDy=0;" edge="1" parent="1" source="b7" target="b6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="410" />
+              <mxPoint x="460" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b10" target="b9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="664" />
+              <mxPoint x="545" y="664" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b11" target="b9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="664" />
+              <mxPoint x="545" y="664" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b12" target="b9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="664" />
+              <mxPoint x="545" y="664" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" value="" style="html=1;rounded=0;strokeColor=#333333;strokeWidth=1;endArrow=block;endFill=0;endSize=12;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="b13" target="b9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="664" />
+              <mxPoint x="545" y="664" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="404" y="390" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="502" y="150" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="asetDao" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="471.3" y="282" width="49.4" height="16" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
