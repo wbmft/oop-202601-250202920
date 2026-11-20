@@ -29,7 +29,7 @@ Salin setiap pertanyaan ambigu (nomor 1 sampai 7) ke sini dan jawab. Contoh:
 
 Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubahan skema database, format error API, dan seterusnya.
 
-## A-08: rumus denda progresif (minggu 5)
+## A-02: rumus denda progresif (minggu 5)
 - Pertanyaan: Bagaimana denda dihitung agar makin berat bila makin lama terlambat, tetapi tetap memenuhi syarat
   minimal (0 hari = 0, tidak pernah lebih murah dari DendaFlat, tidak pernah turun, hari ke-30 lebih mahal dari flat)?
 - Keputusan: 7 hari pertama dihitung sama dengan flat. Setiap hari setelah hari ke-7 dikenai tarif dua kali lipat.
@@ -46,7 +46,7 @@ Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubah
 - Tes yang membuktikan: `Minggu05AbstraksiTest.dendaProgresifMemenuhiSyaratMinimal` (tes dosen, syarat minimal).
   Tes buatan sendiri di folder `mahasiswa/` belum ditulis.
 
-## A-09: perhitungan dasar denda dipindah ke metode terlindung (minggu 5)
+## A-03: perhitungan dasar denda dipindah ke metode terlindung (minggu 5)
 - Pertanyaan: `Aset.hitungDenda` harus abstrak, tetapi `Ruang`, `Laptop`, dan `AlatLab` sebelumnya memanggil
   `super.hitungDenda(...)`. Bagaimana agar kode tetap dipakai ulang?
 - Keputusan: Perhitungan dasar (hari x tarif varian, termasuk penolakan hari negatif) dipindah ke
@@ -56,3 +56,10 @@ Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubah
 - Dampak ke kode: `Aset.dendaDasar`, `Ruang.hitungDenda`, `Laptop.hitungDenda`, `AlatLab.hitungDenda`.
 - Tes yang membuktikan: `Minggu04PolimorfismeTest` (hasil denda tidak berubah) dan
   `Minggu05AbstraksiTest.dendaFlatSamaDenganHitungDendaAset`.
+
+## A-04: batas waktu bentrok
+- Pertanyaan: 09:00-11:00 dan 11:00-13:00 pada aset yang sama bentrok atau tidak?
+- Keputusan: Tidak bentrok. Rentang waktu diperlakukan setengah terbuka [mulai, selesai): waktu mulai ikut, waktu selesai tidak.
+- Alasan: Aset yang dikembalikan pukul 11:00 sudah bebas pukul 11:00, jadi peminjam berikutnya boleh langsung mulai. Jadwal berurutan tanpa jeda bisa dipakai penuh.
+- Dampak ke kode: JadwalPeminjaman.bentrok memakai kondisi baru.mulai < lama.selesai DAN lama.mulai < baru.selesai (perbandingan ketat, isBefore).
+- Tes yang membuktikan: BatasBentrokTest (selesaiSamaDenganMulai, mulaiSamaDenganSelesaiPeminjamanLama, mulaiSamaTetapBentrok, selesaiSamaTetapBentrok, rentangPersisSamaBentrok).
